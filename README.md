@@ -4,5 +4,5 @@ Super simple way to hook up a preference window with view controllers for each s
 
 === Screen Gif
 
-http://gngrwzrd.com/downloads/gwpreferences-screenshot.gif
+![Screen Gif](http://gngrwzrd.com/downloads/gwpreferences-screenshot.gif)
 
