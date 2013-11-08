@@ -17,6 +17,7 @@
 	
 	//get first toolbar item and show it's view controller.
 	NSString * firstIdentifier = [[[self.toolbar items] objectAtIndex:0] itemIdentifier];
+	[self.toolbar setSelectedItemIdentifier:firstIdentifier];
 	[self _switchViewControllersWithIdentifier:firstIdentifier];
 	
 	//setup a key handler event monitor to watch for escape key
