@@ -17,6 +17,7 @@
 	}
 	_instances = [NSMutableDictionary dictionary];
 	NSString * firstIdentifier = [[[self.toolbar items] objectAtIndex:0] itemIdentifier];
+	[self.toolbar setSelectedItemIdentifier:firstIdentifier];
 	[self _switchViewControllersWithIdentifier:firstIdentifier];
 }
 
