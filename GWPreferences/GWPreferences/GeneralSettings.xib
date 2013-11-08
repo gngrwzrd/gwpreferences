@@ -46,6 +46,7 @@
 								<string key="NSFrame">{{1, 1}, {444, 220}}</string>
 								<reference key="NSSuperview" ref="894092958"/>
 								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:11</string>
 							</object>
 						</array>
@@ -58,7 +59,7 @@
 						<object class="NSTextFieldCell" key="NSTitleCell">
 							<int key="NSCellFlags">67108864</int>
 							<int key="NSCellFlags2">0</int>
-							<string key="NSContents">Stuff</string>
+							<string key="NSContents">General Settings</string>
 							<object class="NSFont" key="NSSupport">
 								<string key="NSName">.LucidaGrandeUI</string>
 								<double key="NSSize">11</double>

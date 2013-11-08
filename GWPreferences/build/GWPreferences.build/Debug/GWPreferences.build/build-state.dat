@@ -360,8 +360,8 @@ t1383875180
 s475
 
 N/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/CacheSettings.xib
-c00000000527C44AE0000000000001EF9
-t1383875758
+c00000000527C51C80000000000001EF9
+t1383879112
 s7929
 
 N/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/GWAppDelegate.h
@@ -390,14 +390,14 @@ t1383878272
 s356
 
 N/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/GWPreferences/GWPrefsWindowController.m
-c00000000527C4EC6000000000000097C
-t1383878342
+c00000000527C4EE2000000000000097C
+t1383878370
 s2428
 
 N/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/GWPreferences/GWPrefsWindowController.xib
-c00000000527C449900000000000033A5
-t1383875737
-s13221
+c00000000527C4EF0000000000000339F
+t1383878384
+s13215
 
 N/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/GeneralSettings.h
 c00000000527C40AB00000000000000DF
@@ -410,9 +410,9 @@ t1383874731
 s483
 
 N/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/GeneralSettings.xib
-c00000000527C44C10000000000001EF9
-t1383875777
-s7929
+c00000000527C51C20000000000001F2D
+t1383879106
+s7981
 
 N/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/Images.xcassets
 c00000000527C3DF20000000000000066
@@ -435,7 +435,7 @@ t1383874034
 s243
 
 N/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/Debug/GWPreferences.app
-t1383878339
+t1383879059
 s102
 
 N/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/Debug/GWPreferences.app/Contents/Info.plist
@@ -443,7 +443,7 @@ t1383874325
 s1432
 
 N/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/Debug/GWPreferences.app/Contents/MacOS/GWPreferences
-t1383878343
+t1383879057
 s35716
 
 N/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/Debug/GWPreferences.app/Contents/PkgInfo
@@ -455,16 +455,16 @@ t1383874642
 s36497
 
 N/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/Debug/GWPreferences.app/Contents/Resources/CacheSettings.nib
-t1383875765
+t1383879420
 s2224
 
 N/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/Debug/GWPreferences.app/Contents/Resources/GWPrefsWindowController.nib
-t1383875741
+t1383879059
 s4113
 
 N/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/Debug/GWPreferences.app/Contents/Resources/GeneralSettings.nib
-t1383875891
-s2219
+t1383879420
+s2232
 
 N/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/Debug/GWPreferences.app/Contents/Resources/en.lproj/Credits.rtf
 t1383874323
@@ -488,7 +488,7 @@ t1383875251
 s773
 
 N/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/GWPreferences.build/Debug/GWPreferences.build/Objects-normal/x86_64/GWPrefsWindowController.o
-t1383878343
+t1383879057
 s47276
 
 N/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/GWPreferences.build/Debug/GWPreferences.build/Objects-normal/x86_64/GeneralSettings.o
@@ -531,7 +531,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies09326e47862cb841^60b16e47862cb841^---0#1#1#--18"Check dependencies36"CDADD8E6-BEE7-43D4-AD08-CBADBECCAD5A-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciese318a57a8a2cb841^fcdfd97a8a2cb841^---0#1#1#--18"Check dependencies36"2778E1AE-7B59-42C0-BC62-65060EB052FD-
 
 CCompileAssetCatalog /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/Debug/GWPreferences.app/Contents/Resources /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/Images.xcassets
 s405567123.495947
@@ -584,8 +584,8 @@ CCompileC build/GWPreferences.build/Debug/GWPreferences.build/Objects-normal/x86
 r0
 
 CCompileC build/GWPreferences.build/Debug/GWPreferences.build/Objects-normal/x86_64/GWPrefsWindowController.o /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/GWPreferences/GWPrefsWindowController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s405571143.432807
-e405571143.552637
+s405571856.667309
+e405571857.571388
 r1
 xCompileC
 xbuild/GWPreferences.build/Debug/GWPreferences.build/Objects-normal/x86_64/GWPrefsWindowController.o
@@ -596,8 +596,8 @@ xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 d/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/GWPreferences/GWPrefsWindowController.m
 d/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/GWPreferences/GWPrefsWindowController.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection125"Compile /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/GWPreferences/GWPrefsWindowController.m232"CompileC build/GWPreferences.build/Debug/GWPreferences.build/Objects-normal/x86_64/GWPrefsWindowController.o GWPreferences/GWPreferences/GWPrefsWindowController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler83f66e47862cb841^147a8d47862cb841^---0#0#1#-19%DVTDocumentLocation2@124"file:///Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/GWPreferences/GWPrefsWindowController.m0000000000000000^3569"CompileC build/GWPreferences.build/Debug/GWPreferences.build/Objects-normal/x86_64/GWPrefsWindowController.o GWPreferences/GWPreferences/GWPrefsWindowController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -Wno-sign-conversion -iquote /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/GWPreferences.build/Debug/GWPreferences.build/GWPreferences-generated-files.hmap -I/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/GWPreferences.build/Debug/GWPreferences.build/GWPreferences-own-target-headers.hmap -I/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/GWPreferences.build/Debug/GWPreferences.build/GWPreferences-all-target-headers.hmap -iquote /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/GWPreferences.build/Debug/GWPreferences.build/GWPreferences-project-headers.hmap -I/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/GWPreferences.build/Debug/GWPreferences.build/DerivedSources/x86_64 -I/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/GWPreferences.build/Debug/GWPreferences.build/DerivedSources -F/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/Debug -include /var/folders/bk/dv50xy155l77t6xjbbx6zf580000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/GWPreferences-Prefix-cuzsqgohapziymfwlgyxkhflikxb/GWPreferences-Prefix.pch -MMD -MT dependencies -MF /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/GWPreferences.build/Debug/GWPreferences.build/Objects-normal/x86_64/GWPrefsWindowController.d --serialize-diagnostics /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/GWPreferences.build/Debug/GWPreferences.build/Objects-normal/x86_64/GWPrefsWindowController.dia -c /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/GWPreferences/GWPrefsWindowController.m -o /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/GWPreferences.build/Debug/GWPreferences.build/Objects-normal/x86_64/GWPrefsWindowController.o36"C192D1C1-47B0-40DF-9C5A-60BE842C99BC-
-b5CAB7D90-EBD8-4A2B-985A-2E98A9138FA7
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection125"Compile /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/GWPreferences/GWPrefsWindowController.m232"CompileC build/GWPreferences.build/Debug/GWPreferences.build/Objects-normal/x86_64/GWPrefsWindowController.o GWPreferences/GWPreferences/GWPrefsWindowController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilerea3fab10892cb841^56479211892cb841^---0#0#1#-19%DVTDocumentLocation2@124"file:///Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/GWPreferences/GWPrefsWindowController.m0000000000000000^3569"CompileC build/GWPreferences.build/Debug/GWPreferences.build/Objects-normal/x86_64/GWPrefsWindowController.o GWPreferences/GWPreferences/GWPrefsWindowController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -Wno-sign-conversion -iquote /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/GWPreferences.build/Debug/GWPreferences.build/GWPreferences-generated-files.hmap -I/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/GWPreferences.build/Debug/GWPreferences.build/GWPreferences-own-target-headers.hmap -I/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/GWPreferences.build/Debug/GWPreferences.build/GWPreferences-all-target-headers.hmap -iquote /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/GWPreferences.build/Debug/GWPreferences.build/GWPreferences-project-headers.hmap -I/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/GWPreferences.build/Debug/GWPreferences.build/DerivedSources/x86_64 -I/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/GWPreferences.build/Debug/GWPreferences.build/DerivedSources -F/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/Debug -include /var/folders/bk/dv50xy155l77t6xjbbx6zf580000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/GWPreferences-Prefix-cuzsqgohapziymfwlgyxkhflikxb/GWPreferences-Prefix.pch -MMD -MT dependencies -MF /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/GWPreferences.build/Debug/GWPreferences.build/Objects-normal/x86_64/GWPrefsWindowController.d --serialize-diagnostics /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/GWPreferences.build/Debug/GWPreferences.build/Objects-normal/x86_64/GWPrefsWindowController.dia -c /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/GWPreferences/GWPrefsWindowController.m -o /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/GWPreferences.build/Debug/GWPreferences.build/Objects-normal/x86_64/GWPrefsWindowController.o36"A43FD7E2-51B8-4F5D-A2BD-D935B274BE4D-
+bE8992571-5DA3-45B1-8213-92638512625B
 
 CCompileC build/GWPreferences.build/Debug/GWPreferences.build/Objects-normal/x86_64/GeneralSettings.o /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/GeneralSettings.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s405567628.204993
@@ -640,34 +640,34 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Compil
 b09CD1451-8966-4212-A57C-1FD42F81D302
 
 CCompileXIB /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/CacheSettings.xib
-s405568565.254930
-e405568565.954766
+s405572218.866797
+e405572220.023953
 r1
 xCompileXIB
 x/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/CacheSettings.xib
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Compiling /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/CacheSettings.xib42"CompileXIB GWPreferences/CacheSettings.xibf85541357c2cb841^336cf4357c2cb841^---0#0#1#-19%DVTDocumentLocation2@102"file:///Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/CacheSettings.xib0000000000000000^602"CompileXIB GWPreferences/CacheSettings.xib    cd /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 10.9 --output-format human-readable-text --compile /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/Debug/GWPreferences.app/Contents/Resources/CacheSettings.nib /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/CacheSettings.xib36"2D8A631C-3754-46FD-B3F7-22B803A844B2-
-bD65C30A7-4411-47B9-92F8-F7F71410CBC5
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Compiling /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/CacheSettings.xib42"CompileXIB GWPreferences/CacheSettings.xib6b27de7a8a2cb841^3e22067c8a2cb841^---0#0#1#-19%DVTDocumentLocation2@102"file:///Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/CacheSettings.xib0000000000000000^602"CompileXIB GWPreferences/CacheSettings.xib    cd /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 10.9 --output-format human-readable-text --compile /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/Debug/GWPreferences.app/Contents/Resources/CacheSettings.nib /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/CacheSettings.xib36"93E8580A-B318-4A7F-B5CA-498E56281121-
+bF1ED76FF-53B2-46E4-9CA9-A5D9109FC162
 
 CCompileXIB /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/GWPreferences/GWPreferencesWindowController.xib
 r0
 
 CCompileXIB /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/GWPreferences/GWPrefsWindowController.xib
-s405568541.283492
-e405568541.300246
+s405571857.878649
+e405571859.134614
 r1
 xCompileXIB
 x/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/GWPreferences/GWPrefsWindowController.xib
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection129"Compiling /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/GWPreferences/GWPrefsWindowController.xib66"CompileXIB GWPreferences/GWPreferences/GWPrefsWindowController.xib43aa481d7c2cb841^72dd4c1d7c2cb841^---0#0#1#-19%DVTDocumentLocation2@126"file:///Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/GWPreferences/GWPrefsWindowController.xib0000000000000000^660"CompileXIB GWPreferences/GWPreferences/GWPrefsWindowController.xib    cd /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 10.9 --output-format human-readable-text --compile /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/Debug/GWPreferences.app/Contents/Resources/GWPrefsWindowController.nib /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/GWPreferences/GWPrefsWindowController.xib36"72A890CA-AECD-464D-B406-E693AB888D30-
-b6AE69015-8D1B-49E6-AF24-DE1D1AA83C2D
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection129"Compiling /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/GWPreferences/GWPrefsWindowController.xib66"CompileXIB GWPreferences/GWPreferences/GWPrefsWindowController.xib8750e111892cb841^42992213892cb841^---0#0#1#-19%DVTDocumentLocation2@126"file:///Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/GWPreferences/GWPrefsWindowController.xib0000000000000000^660"CompileXIB GWPreferences/GWPreferences/GWPrefsWindowController.xib    cd /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 10.9 --output-format human-readable-text --compile /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/Debug/GWPreferences.app/Contents/Resources/GWPrefsWindowController.nib /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/GWPreferences/GWPrefsWindowController.xib36"B01E5E35-2157-4266-9CA3-EC047F53F5B9-
+bE8992571-5DA3-45B1-8213-92638512625B
 
 CCompileXIB /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/GeneralSettings.xib
-s405568691.559386
-e405568691.575542
+s405572218.866489
+e405572220.024106
 r1
 xCompileXIB
 x/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/GeneralSettings.xib
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Compiling /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/GeneralSettings.xib44"CompileXIB GWPreferences/GeneralSettings.xibd9438fb37c2cb841^605793b37c2cb841^---0#0#1#-19%DVTDocumentLocation2@104"file:///Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/GeneralSettings.xib0000000000000000^608"CompileXIB GWPreferences/GeneralSettings.xib    cd /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 10.9 --output-format human-readable-text --compile /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/Debug/GWPreferences.app/Contents/Resources/GeneralSettings.nib /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/GeneralSettings.xib36"CB73FF46-2578-46EB-9082-BE243C7360AF-
-b6FD665A2-D365-4B3D-9729-260DDCDD11DF
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Compiling /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/GeneralSettings.xib44"CompileXIB GWPreferences/GeneralSettings.xibe526de7a8a2cb841^7f32067c8a2cb841^---0#0#1#-19%DVTDocumentLocation2@104"file:///Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/GeneralSettings.xib0000000000000000^608"CompileXIB GWPreferences/GeneralSettings.xib    cd /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 10.9 --output-format human-readable-text --compile /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/Debug/GWPreferences.app/Contents/Resources/GeneralSettings.nib /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/GeneralSettings.xib36"6A381EA5-EBB4-4484-B543-DFE2CA4DC280-
+bF1ED76FF-53B2-46E4-9CA9-A5D9109FC162
 
 CCopyStringsFile /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/Debug/GWPreferences.app/Contents/Resources/en.lproj/InfoPlist.strings GWPreferences/en.lproj/InfoPlist.strings
 s405567123.492408
@@ -690,8 +690,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Copy bu
 b03222E25-CAB5-49FE-83CB-3090AC46C8B1
 
 CLd /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/Debug/GWPreferences.app/Contents/MacOS/GWPreferences normal x86_64
-s405571143.555114
-e405571143.609207
+s405571857.589683
+e405571857.874562
 r1
 xLd
 x/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/Debug/GWPreferences.app/Contents/MacOS/GWPreferences
@@ -709,12 +709,12 @@ d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libobjc.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libSystem.dylib
 d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.osx.a
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/QuartzCore.framework/Versions/A/Frameworks/CoreImage.framework/Versions/A/CoreImage
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/QuartzCore.framework/Versions/A/Frameworks/ScalableUserInterface.framework/Versions/A/ScalableUserInterface
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/AppKit
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreData.framework/CoreData
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/QuartzCore.framework/Versions/A/Frameworks/CoreImage.framework/Versions/A/CoreImage
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/QuartzCore.framework/Versions/A/Frameworks/ScalableUserInterface.framework/Versions/A/ScalableUserInterface
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcache.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcommonCrypto.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcompiler_rt.dylib
@@ -765,8 +765,8 @@ d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/AE
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/LaunchServices
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/DictionaryServices.framework/Versions/A/DictionaryServices
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection127"Link /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/Debug/GWPreferences.app/Contents/MacOS/GWPreferences75"Ld build/Debug/GWPreferences.app/Contents/MacOS/GWPreferences normal x86_64272f8e47862cb841^84f59b47862cb841^---0#0#1#--1167"Ld build/Debug/GWPreferences.app/Contents/MacOS/GWPreferences normal x86_64    cd /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences    setenv MACOSX_DEPLOYMENT_TARGET 10.9    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/Debug -F/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/Debug -filelist /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/GWPreferences.build/Debug/GWPreferences.build/Objects-normal/x86_64/GWPreferences.LinkFileList -mmacosx-version-min=10.9 -fobjc-arc -fobjc-link-runtime -framework QuartzCore -framework Cocoa -Xlinker -dependency_info -Xlinker /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/GWPreferences.build/Debug/GWPreferences.build/Objects-normal/x86_64/GWPreferences_dependency_info.dat -o /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/Debug/GWPreferences.app/Contents/MacOS/GWPreferences36"014F1684-6664-445F-A524-2A063762C98B-
-b5CAB7D90-EBD8-4A2B-985A-2E98A9138FA7
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection127"Link /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/Debug/GWPreferences.app/Contents/MacOS/GWPreferences75"Ld build/Debug/GWPreferences.app/Contents/MacOS/GWPreferences normal x86_64910e9711892cb841^9fe3df11892cb841^---0#0#1#--1167"Ld build/Debug/GWPreferences.app/Contents/MacOS/GWPreferences normal x86_64    cd /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences    setenv MACOSX_DEPLOYMENT_TARGET 10.9    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/Debug -F/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/Debug -filelist /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/GWPreferences.build/Debug/GWPreferences.build/Objects-normal/x86_64/GWPreferences.LinkFileList -mmacosx-version-min=10.9 -fobjc-arc -fobjc-link-runtime -framework QuartzCore -framework Cocoa -Xlinker -dependency_info -Xlinker /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/GWPreferences.build/Debug/GWPreferences.build/Objects-normal/x86_64/GWPreferences_dependency_info.dat -o /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/Debug/GWPreferences.app/Contents/MacOS/GWPreferences36"01DFCC32-A7C7-455D-AB1F-0337E7ADC736-
+bE8992571-5DA3-45B1-8213-92638512625B
 
 CProcessInfoPlistFile /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/Debug/GWPreferences.app/Contents/Info.plist /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/GWPreferences/GWPreferences-Info.plist
 s405567125.579855
@@ -797,11 +797,11 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection49"Precomp
 b6B9DFEA8-DC2A-4F9A-85BB-8CA603A0460F
 
 CTouch /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/Debug/GWPreferences.app
-s405571143.612070
-e405571143.617494
+s405572220.025386
+e405572220.029738
 r1
 xTouch
 x/Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/Debug/GWPreferences.app
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Touch /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/Debug/GWPreferences.app35"Touch build/Debug/GWPreferences.app5abc9c47862cb841^66159e47862cb841^---0#0#1#--223"Touch build/Debug/GWPreferences.app    cd /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences    /usr/bin/touch -c /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/Debug/GWPreferences.app36"E6BBFD96-4448-4AA2-9B7B-E8C7BAACAD37-
-b5CAB7D90-EBD8-4A2B-985A-2E98A9138FA7
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Touch /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/Debug/GWPreferences.app35"Touch build/Debug/GWPreferences.app3b8b067c8a2cb841^d49d077c8a2cb841^---0#0#1#--223"Touch build/Debug/GWPreferences.app    cd /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences    /usr/bin/touch -c /Users/aaronsmith/Development/Aaron/gwpreferences/GWPreferences/build/Debug/GWPreferences.app36"37858411-1BE8-450B-9707-42610668E3D0-
+bF1ED76FF-53B2-46E4-9CA9-A5D9109FC162
 
