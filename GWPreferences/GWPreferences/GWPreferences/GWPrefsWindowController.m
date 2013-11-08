@@ -12,13 +12,19 @@
 	//if toolbar outlet isn't set nothing will work.
 	if(!self.toolbar) {
 		NSException * exc = [NSException exceptionWithName:@"NilReference" reason:@"The toolbar IBOutlet is not set." userInfo:nil];
+		NSLog(@"%@",exc);
 		@throw exc;
 	}
 	
 	//get first toolbar item and show it's view controller.
 	NSString * firstIdentifier = [[[self.toolbar items] objectAtIndex:0] itemIdentifier];
-	[self.toolbar setSelectedItemIdentifier:firstIdentifier];
+	if(_firstIdentifier) {
+		firstIdentifier = _firstIdentifier;
+	}
 	[self _switchViewControllersWithIdentifier:firstIdentifier];
+	
+	//set first title
+	//[self switchTitles:_currentViewController];
 	
 	//setup a key handler event monitor to watch for escape key
 	NSEvent * (^handler)(NSEvent *) = ^(NSEvent * theEvent) {
@@ -33,7 +39,23 @@
 		}
 		return result;
 	};
+	
 	eventMonitor = [NSEvent addLocalMonitorForEventsMatchingMask:NSKeyDownMask handler:handler];
+}
+
+- (void) showWindowSelectedIdentifier:(NSString *) identifier; {
+	_firstIdentifier = identifier;
+	[self showWindow:nil];
+	[self _switchViewControllersWithIdentifier:identifier];
+}
+
+- (void) showWindowAtFirstPreference {
+	NSString * firstIdentifier = [[[self.toolbar items] objectAtIndex:0] itemIdentifier];
+	if(!firstIdentifier) {
+		[self showWindow:nil];
+	} else {
+		[self showWindowSelectedIdentifier:firstIdentifier];
+	}
 }
 
 - (IBAction) toolbarItemPressed:(id)sender {
@@ -43,14 +65,37 @@
 	[self _switchViewControllersWithIdentifier:identifier];
 }
 
+- (void) switchTitles:(NSViewController *) instance {
+	//grab title if it's available
+	if([instance conformsToProtocol:@protocol(GWPrefsWindowViewControllerExtras)]) {
+		NSViewController <GWPrefsWindowViewControllerExtras> * inst = (NSViewController<GWPrefsWindowViewControllerExtras>*)instance;
+		if([inst respondsToSelector:@selector(titleForWindow)]) {
+			NSString * title = [inst performSelector:@selector(titleForWindow)];
+			self.window.title = title;
+		}
+	}
+}
+
 - (void) _switchViewControllersWithIdentifier:(NSString *) identifier {
+	NSString * xibpath = [[NSBundle mainBundle] pathForResource:identifier ofType:@"xib"];
+	NSString * nibpath = [[NSBundle mainBundle] pathForResource:identifier ofType:@"nib"];
+	if(!xibpath && !nibpath) {
+		NSLog(@"NibNotFound: Nib '%@' not found.",identifier);
+		return;
+	}
+	
+	//select toolbar item
+	[self.toolbar setSelectedItemIdentifier:identifier];
+	
 	//grab an existing instance if it's available
-	NSViewController * instance = [_instances objectForKey:identifier];
+	Class cls = NSClassFromString(identifier);
+	id instance = [_instances objectForKey:identifier];
 	if(!instance) {
-		instance = [[NSViewController alloc] initWithNibName:identifier bundle:nil];
-		instance.view.wantsLayer = TRUE;
+		instance = [[cls alloc] initWithNibName:identifier bundle:nil];
+		((NSViewController*)instance).view.wantsLayer = TRUE;
 		[_instances setObject:instance forKey:identifier];
 	}
+	
 	[self _switchViewControllers:instance];
 }
 
@@ -58,7 +103,10 @@
 	if(_currentViewController == newvc) {
 		return;
 	}
+	
 	_nextViewController = newvc;
+	[self switchTitles:newvc];
+	
 	if(_currentViewController) {
 		[CATransaction begin];
 		[CATransaction setCompletionBlock:^{
@@ -97,9 +145,9 @@
 	[self.window setFrame:cwf display:TRUE animate:TRUE];
 	
 	_nextViewController.view.layer.opacity = 0;
+	_currentViewController = _nextViewController;
 	[CATransaction begin];
 	[CATransaction setCompletionBlock:^{
-		_currentViewController = _nextViewController;
 		[[self.window contentView] addSubview:_nextViewController.view];
 	}];
 	_nextViewController.view.layer.opacity = 1;
@@ -107,7 +155,6 @@
 }
 
 - (void) dealloc {
-	NSLog(@"dealloc");
 	[NSEvent removeMonitor:eventMonitor];
 	eventMonitor = nil;
 	_instances = nil;
