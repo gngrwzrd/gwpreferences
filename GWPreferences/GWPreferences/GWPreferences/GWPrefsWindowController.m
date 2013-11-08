@@ -6,27 +6,44 @@
 
 @implementation GWPrefsWindowController
 
-- (void) windowDidLoad {
-	[super windowDidLoad];
-}
-
 - (void) awakeFromNib {
+	_instances = [NSMutableDictionary dictionary];
+	
+	//if toolbar outlet isn't set nothing will work.
 	if(!self.toolbar) {
-		NSException * exc = [NSException exceptionWithName:@"UndefinedToolbar" reason:@"The toolbar IBOutlet is not set." userInfo:nil];
+		NSException * exc = [NSException exceptionWithName:@"NilReference" reason:@"The toolbar IBOutlet is not set." userInfo:nil];
 		@throw exc;
 	}
-	_instances = [NSMutableDictionary dictionary];
+	
+	//get first toolbar item and show it's view controller.
 	NSString * firstIdentifier = [[[self.toolbar items] objectAtIndex:0] itemIdentifier];
 	[self _switchViewControllersWithIdentifier:firstIdentifier];
+	
+	//setup a key handler event monitor to watch for escape key
+	NSEvent * (^handler)(NSEvent *) = ^(NSEvent * theEvent) {
+		NSWindow * targetWindow = theEvent.window;
+		if(targetWindow != self.window) {
+			return theEvent;
+		}
+		NSEvent * result = theEvent;
+		if(theEvent.keyCode == 53) {
+			[self.window performClose:nil];
+			result = nil;
+		}
+		return result;
+	};
+	eventMonitor = [NSEvent addLocalMonitorForEventsMatchingMask:NSKeyDownMask handler:handler];
 }
 
 - (IBAction) toolbarItemPressed:(id)sender {
+	//get item identifier and switch to it
 	NSToolbarItem * item = (NSToolbarItem *)sender;
 	NSString * identifier = item.itemIdentifier;
 	[self _switchViewControllersWithIdentifier:identifier];
 }
 
 - (void) _switchViewControllersWithIdentifier:(NSString *) identifier {
+	//grab an existing instance if it's available
 	NSViewController * instance = [_instances objectForKey:identifier];
 	if(!instance) {
 		instance = [[NSViewController alloc] initWithNibName:identifier bundle:nil];
@@ -86,6 +103,13 @@
 	}];
 	_nextViewController.view.layer.opacity = 1;
 	[CATransaction commit];
+}
+
+- (void) dealloc {
+	NSLog(@"dealloc");
+	[NSEvent removeMonitor:eventMonitor];
+	eventMonitor = nil;
+	_instances = nil;
 }
 
 @end

@@ -46,6 +46,7 @@
 								<string key="NSFrame">{{1, 1}, {560, 301}}</string>
 								<reference key="NSSuperview" ref="640242813"/>
 								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:11</string>
 							</object>
 						</array>
