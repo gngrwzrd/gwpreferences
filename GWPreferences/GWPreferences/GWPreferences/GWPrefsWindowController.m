@@ -23,9 +23,6 @@
 	}
 	[self _switchViewControllersWithIdentifier:firstIdentifier];
 	
-	//set first title
-	//[self switchTitles:_currentViewController];
-	
 	//setup a key handler event monitor to watch for escape key
 	NSEvent * (^handler)(NSEvent *) = ^(NSEvent * theEvent) {
 		NSWindow * targetWindow = theEvent.window;
@@ -92,7 +89,6 @@
 	id instance = [_instances objectForKey:identifier];
 	if(!instance) {
 		instance = [[cls alloc] initWithNibName:identifier bundle:nil];
-		((NSViewController*)instance).view.wantsLayer = TRUE;
 		[_instances setObject:instance forKey:identifier];
 	}
 	
@@ -107,14 +103,22 @@
 	_nextViewController = newvc;
 	[self switchTitles:newvc];
 	
+	BOOL animate = FALSE;
+	
 	if(_currentViewController) {
-		[CATransaction begin];
-		[CATransaction setCompletionBlock:^{
+		if(animate) {
+			[NSAnimationContext beginGrouping];
+			[[NSAnimationContext currentContext] setDuration:.1];
+			[[NSAnimationContext currentContext] setCompletionHandler:^{
+				[_currentViewController.view removeFromSuperview];
+				[self addNextViewController];
+			}];
+			[_currentViewController.view.animator setAlphaValue:0];
+			[NSAnimationContext endGrouping];
+		} else {
 			[_currentViewController.view removeFromSuperview];
 			[self addNextViewController];
-		}];
-		_currentViewController.view.layer.opacity = 0;
-		[CATransaction commit];
+		}
 	} else {
 		[self addNextViewController];
 	}
@@ -144,14 +148,27 @@
 	
 	[self.window setFrame:cwf display:TRUE animate:TRUE];
 	
-	_nextViewController.view.layer.opacity = 0;
-	_currentViewController = _nextViewController;
-	[CATransaction begin];
-	[CATransaction setCompletionBlock:^{
+	BOOL animate = FALSE;
+	
+	if(animate) {
+		[NSAnimationContext beginGrouping];
+		[[NSAnimationContext currentContext] setDuration:0];
+		[_nextViewController.view.animator setAlphaValue:0];
+		[NSAnimationContext endGrouping];
+		_currentViewController = _nextViewController;
+		
+		[NSAnimationContext beginGrouping];
+		[[NSAnimationContext currentContext] setDuration:.1];
+		[[NSAnimationContext currentContext] setCompletionHandler:^{
+			[[self.window contentView] addSubview:_nextViewController.view];
+		}];
+		[_nextViewController.view.animator setAlphaValue:1];
+		[NSAnimationContext endGrouping];
+		
+	} else {
+		_currentViewController = _nextViewController;
 		[[self.window contentView] addSubview:_nextViewController.view];
-	}];
-	_nextViewController.view.layer.opacity = 1;
-	[CATransaction commit];
+	}
 }
 
 - (void) dealloc {
