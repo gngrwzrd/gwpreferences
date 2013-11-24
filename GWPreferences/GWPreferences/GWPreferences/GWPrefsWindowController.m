@@ -153,7 +153,7 @@
 }
 
 - (void) dealloc {
-	//NSLog(@"dealloc!");
+	NSLog(@"dealloc!");
 	[NSEvent removeMonitor:eventMonitor];
 	eventMonitor = nil;
 	_instances = nil;
