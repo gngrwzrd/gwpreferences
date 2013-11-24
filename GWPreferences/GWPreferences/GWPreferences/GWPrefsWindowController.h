@@ -6,18 +6,21 @@
 - (NSString *) titleForWindow;
 @end
 
-@interface GWPrefsWindowController : NSWindowController {
+@interface GWPrefsWindowController : NSWindowController  <NSWindowDelegate> {
 	NSMutableDictionary * _instances;
-	__weak NSViewController * _currentViewController;
-	__weak NSViewController * _nextViewController;
+	__unsafe_unretained NSViewController * _currentViewController;
+	__unsafe_unretained NSViewController * _nextViewController;
 	id eventMonitor;
 	NSString * _firstIdentifier;
 }
 
 @property NSDictionary * viewControllerClasses;
-@property (weak) IBOutlet NSToolbar * toolbar;
+@property (assign) IBOutlet NSToolbar * toolbar;
 
 - (void) showWindowAtFirstPreference;
-- (void) showWindowSelectedIdentifier:(NSString *) identifier;
+- (void) showWindowAtSelectedIdentifier:(NSString *) identifier;
+- (IBAction) toolbarItemPressed:(id)sender;
+- (NSToolbarItem *) firstPreference;
+- (NSToolbarItem *) itemForIdentifier:(NSString *) identier;
 
 @end

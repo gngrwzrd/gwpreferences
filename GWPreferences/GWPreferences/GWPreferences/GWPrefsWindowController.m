@@ -23,9 +23,6 @@
 	}
 	[self _switchViewControllersWithIdentifier:firstIdentifier];
 	
-	//set first title
-	//[self switchTitles:_currentViewController];
-	
 	//setup a key handler event monitor to watch for escape key
 	NSEvent * (^handler)(NSEvent *) = ^(NSEvent * theEvent) {
 		NSWindow * targetWindow = theEvent.window;
@@ -43,7 +40,7 @@
 	eventMonitor = [NSEvent addLocalMonitorForEventsMatchingMask:NSKeyDownMask handler:handler];
 }
 
-- (void) showWindowSelectedIdentifier:(NSString *) identifier; {
+- (void) showWindowAtSelectedIdentifier:(NSString *) identifier; {
 	_firstIdentifier = identifier;
 	[self showWindow:nil];
 	[self _switchViewControllersWithIdentifier:identifier];
@@ -54,7 +51,7 @@
 	if(!firstIdentifier) {
 		[self showWindow:nil];
 	} else {
-		[self showWindowSelectedIdentifier:firstIdentifier];
+		[self showWindowAtSelectedIdentifier:firstIdentifier];
 	}
 }
 
@@ -92,7 +89,6 @@
 	id instance = [_instances objectForKey:identifier];
 	if(!instance) {
 		instance = [[cls alloc] initWithNibName:identifier bundle:nil];
-		((NSViewController*)instance).view.wantsLayer = TRUE;
 		[_instances setObject:instance forKey:identifier];
 	}
 	
@@ -108,13 +104,8 @@
 	[self switchTitles:newvc];
 	
 	if(_currentViewController) {
-		[CATransaction begin];
-		[CATransaction setCompletionBlock:^{
-			[_currentViewController.view removeFromSuperview];
-			[self addNextViewController];
-		}];
-		_currentViewController.view.layer.opacity = 0;
-		[CATransaction commit];
+		[_currentViewController.view removeFromSuperview];
+		[self addNextViewController];
 	} else {
 		[self addNextViewController];
 	}
@@ -144,17 +135,25 @@
 	
 	[self.window setFrame:cwf display:TRUE animate:TRUE];
 	
-	_nextViewController.view.layer.opacity = 0;
 	_currentViewController = _nextViewController;
-	[CATransaction begin];
-	[CATransaction setCompletionBlock:^{
-		[[self.window contentView] addSubview:_nextViewController.view];
-	}];
-	_nextViewController.view.layer.opacity = 1;
-	[CATransaction commit];
+	[[self.window contentView] addSubview:_nextViewController.view];
+}
+
+- (NSToolbarItem *) firstPreference; {
+	return [[self.toolbar items] objectAtIndex:0];
+}
+
+- (NSToolbarItem *) itemForIdentifier:(NSString *) identier {
+	for(NSToolbarItem * item in self.toolbar.items) {
+		if([item.itemIdentifier isEqualToString:identier]) {
+			return item;
+		}
+	}
+	return NULL;
 }
 
 - (void) dealloc {
+	//NSLog(@"dealloc!");
 	[NSEvent removeMonitor:eventMonitor];
 	eventMonitor = nil;
 	_instances = nil;
