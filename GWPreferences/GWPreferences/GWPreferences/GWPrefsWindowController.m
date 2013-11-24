@@ -143,9 +143,9 @@
 	return [[self.toolbar items] objectAtIndex:0];
 }
 
-- (NSToolbarItem *) itemForIdentifier:(NSString *) identier {
+- (NSToolbarItem *) itemForIdentifier:(NSString *) identifier {
 	for(NSToolbarItem * item in self.toolbar.items) {
-		if([item.itemIdentifier isEqualToString:identier]) {
+		if([item.itemIdentifier isEqualToString:identifier]) {
 			return item;
 		}
 	}

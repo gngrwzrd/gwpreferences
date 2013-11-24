@@ -8,10 +8,10 @@
 
 @interface GWPrefsWindowController : NSWindowController  <NSWindowDelegate> {
 	NSMutableDictionary * _instances;
+	NSString * _firstIdentifier;
+	id eventMonitor;
 	__unsafe_unretained NSViewController * _currentViewController;
 	__unsafe_unretained NSViewController * _nextViewController;
-	id eventMonitor;
-	NSString * _firstIdentifier;
 }
 
 @property NSDictionary * viewControllerClasses;
@@ -21,6 +21,6 @@
 - (void) showWindowAtSelectedIdentifier:(NSString *) identifier;
 - (IBAction) toolbarItemPressed:(id)sender;
 - (NSToolbarItem *) firstPreference;
-- (NSToolbarItem *) itemForIdentifier:(NSString *) identier;
+- (NSToolbarItem *) itemForIdentifier:(NSString *) identifier;
 
 @end
